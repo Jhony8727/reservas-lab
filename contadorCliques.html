@@ -1,0 +1,7 @@
+var contadorCliquesDireito = 0;
+
+document.addEventListener("contextmenu", function(event) {
+    event.preventDefault(); // Isso impede que o menu de contexto padrão do navegador apareça
+    contadorCliquesDireito++;
+    console.log("Quantidade de cliques do botão direito do mouse: " + contadorCliquesDireito);
+});
